@@ -3,7 +3,7 @@ import React from 'react'
 export const WeatherItemPage = (props) => {
     return (
         <>
-            <h1 style={{display: "block", width: "413px", margin: "5vh auto"}}>Weather for {props.textVal}</h1>
+            <h1 style={{display: "block", width: "413px", margin: "5vh auto",color:props.mode=="light"?"black":"white"}}>Weather for {props.textVal}</h1>
             <div className="row row-cols-1 row-cols-md-3 mb-3 text-center" style={{ width: "70vw", margin: "5vh auto", justifyContent: "center" }} id="container">
                 <div className="col">
                     <div className="card mb-4 rounded-3 shadow-sm" id="item1">
